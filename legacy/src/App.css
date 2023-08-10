@@ -9,6 +9,7 @@ body {
   height: 100%;
   background-color: white;
 }
+/* Navbar */
 .navbar-container {
   color: #f74040;
   display: flex;
@@ -40,7 +41,16 @@ body {
   margin-right: 30px;
   font-weight: 600;
 }
-
+.menu a {
+  text-decoration: none;
+  color: #f74040;
+  transition: transform .5s ease;
+}
+.menu a:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+/* Hero Section */
 .hero-container {
   position: relative;
   display: flex;
@@ -82,11 +92,12 @@ body {
   max-width: 700px;
 }
 .button-container {
-  margin-top: 20px;
+  margin-top: 50px;
   display: flex;
   gap: 20px;
 }
 .hero-btn {
+  font-size: 16px;
   padding: 10px;
   width: 180px;
   border-radius: 5px;
@@ -101,4 +112,80 @@ body {
   transform: scale(1.1);
   border: white;
   cursor: pointer;
+}
+/* Services */
+.services {
+  background-color: rgb(241, 241, 241);
+  padding-top: 30px;
+  color: #f74040;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.services-heading {
+  color: black;
+  margin-bottom: 10px;
+}
+.grid-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.service-title {
+  margin-bottom: 10px;
+}
+.service-description {
+  color: black;
+  font-size: 18px;
+}
+.grid-item {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  height: 250px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  color: #f74040;
+  box-shadow: inset 0px 5px 5px -5px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px){
+  .hero-container {
+    height: 510px;
+  }
+  .button-container {
+    margin-top: 20px;
+  }
+  .hero-btn {
+    font-size: 14px;
+    padding: 10px;
+    width: 125px;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .grid-item {
+    max-width: 290px;
+    margin: 0 auto;
+  }
 }

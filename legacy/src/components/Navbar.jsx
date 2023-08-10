@@ -8,9 +8,9 @@ const Navbar = () => {
       </div>
 
       <div className="menu">
-            <p>Services</p>
-            <p>Contact Us</p>
-            <p>About Us</p>
+            <a href="#services">Services</a>
+            <a href="#contact-us">Contact Us</a>
+            <a href="#about-us">About Us</a>
       </div>
 
       <div className="hamburger-menu-container">
