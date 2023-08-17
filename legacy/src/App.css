@@ -110,6 +110,13 @@ h1, h2 {
   display: flex;
   gap: 20px;
 }
+.button-container .hero-btn a {
+  text-decoration: none;
+  color: white;
+}
+.button-container .hero-btn a:hover {
+  color: #f74040;
+}
 .hero-btn {
   font-size: 16px;
   padding: 10px;
