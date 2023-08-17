@@ -58,6 +58,12 @@ const Testimonials = () => {
             ))}
             
       </Swiper>
+      <div className='add-reviews'>
+            <h4>Review Us On Google</h4>
+            <a href="https://g.page/r/CWSULi7fnslgEBM/review" target="_blank" rel="noopener noreferrer">
+                  <button className='review-btn'>Add a Review</button>
+            </a>
+      </div>
     </>
   )
 }
