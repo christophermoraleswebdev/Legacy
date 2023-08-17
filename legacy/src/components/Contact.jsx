@@ -1,18 +1,38 @@
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 const Contact = () => {
+
+      const form = useRef();
+
+      const sendEmail = (e) => {
+      e.preventDefault();
+
+      emailjs.sendForm('service_whlrygy', 'template_dyr2sxp', form.current, 'uBUsXkT4RgWsnPmJc')
+            .then((result) => {
+                  console.log(result.text);
+                  console.log("message sent")
+                  e.target.reset()
+                  alert('Message sent successfully')
+            }, (error) => {
+                  console.log(error.text);
+            });
+      };
+
       return (
             <div id="contact-form" className="contact-container">
                   <h1 id="contact-us">CONTACT US</h1>
-                  <form action="https://getform.io/f/e9d423e5-cd28-4b8e-8a1d-c9d6b7e8236c" method="POST">
-                        <label htmlFor="name">Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name"/>
+                  <form ref={form} onSubmit={sendEmail}>
+                        <label >Name:</label>
+                        <input type="text" id="name" name="from_name" placeholder="Your Name"/>
             
-                        <label htmlFor="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Your Email"/>
+                        <label>Email:</label>
+                        <input type="email" id="email" name="user_email" placeholder="Your Email"/>
                         
                         <label htmlFor="message">Message:</label>
                         <input type="text" id="message" name="message" placeholder="Your Message"/>
             
-                        <button className="contact-btn" type="submit">Send</button>
+                        <input className="contact-btn" type="submit" value="Send" />
                   </form>
                   <div className="social-icons">
                         <a href="https://www.instagram.com/legacyindependentservices/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank">
