@@ -12,7 +12,7 @@ const Navbar = () => {
     <div className="navbar-container">
       <div className="logo-container">
         <img src="https://i.ibb.co/ch3V51s/Legacy-Logo.png" alt="Logo" />
-        <h4>Legacy Independent Services</h4>
+        <h4>egacy Independent Services</h4>
       </div>
 
       {/* Main Menu */}
