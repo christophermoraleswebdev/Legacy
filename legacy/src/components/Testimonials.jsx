@@ -9,21 +9,21 @@ const Testimonials = () => {
       const testimonialData = [
             {
                   id: 1,
-                  name: 'John Doe',
-                  role: 'CEO, Company A',
-                  message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae libero vitae nulla feugiat pellentesque.",
+                  name: '-Rendauldo McFadden',
+                  role: 'client',
+                  message: "This team and ownership group are thorough. They provided not only the service my home needed, but also the information to make it a smooth process. Highly recommend!",
             },
             {
                   id: 2,
-                  name: 'Jane Smith',
-                  role: 'Designer, Company B',
-                  message: "Ut tincidunt urna quis turpis bibendum, at condimentum justo feugiat. Sed quis justo in ante varius volutpat.",
+                  name: '-Christopher Mora',
+                  role: 'Client',
+                  message: "I've worked with Legacy on several projects. They are knowledgable and know the claims process well. They are quick to respond and you are updated every step of the way.",
             },
             {
                   id: 3,
-                  name: 'Michael Johnson',
-                  role: 'Marketing Manager, Company C',
-                  message: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+                  name: '-Rollie Flores',
+                  role: 'Client/Southern Pro Roofing',
+                  message: "Professional and very knowledgeable. Helped get through the process seamlessly with results.",
             },
       ]
 
