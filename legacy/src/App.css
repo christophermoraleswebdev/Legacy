@@ -335,12 +335,12 @@ h1, h2 {
   }
   .grid-container {
     grid-template-columns: 1fr;
-    margin-right: 10px;
+    margin-right: 5px;
   }
   .grid-item {
     max-width: 290px;
     margin: 0 auto;
-    height: 265px;
+    height: 280px;
   }
   .contact-container form {
     width: 300px;
