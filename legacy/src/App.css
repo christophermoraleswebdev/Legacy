@@ -202,13 +202,15 @@ h1, h2 {
 }
 .card p {
   font-size: 18px;
+  padding: 10px;
 }
 .grid-container {
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 45px;
   padding: 20px;
+  margin-right: 20px;
 }
 .icon {
   font-size: 40px;
@@ -222,7 +224,6 @@ h1, h2 {
   font-size: 18px;
 }
 .grid-item {
-  padding: 20px;
   text-align: center;
   border: 1px solid #ddd;
   border-radius: 15px;
