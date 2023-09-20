@@ -215,6 +215,7 @@ h1, h2 {
 .icon {
   font-size: 40px;
   margin-bottom: 10px;
+  padding-top: 10px;
 }
 .service-title {
   margin-bottom: 10px;
@@ -334,10 +335,12 @@ h1, h2 {
   }
   .grid-container {
     grid-template-columns: 1fr;
+    margin-right: 10px;
   }
   .grid-item {
     max-width: 290px;
     margin: 0 auto;
+    height: 265px;
   }
   .contact-container form {
     width: 300px;
